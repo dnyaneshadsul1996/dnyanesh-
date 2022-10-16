@@ -1,0 +1,15 @@
+<script>
+    var record = new Promise((res,rej)=>{
+        console.log(typeof res,typeof rej);
+      res("task is completed")
+      //  rej("task is completed")
+    })
+    console.log(record);
+    record.then((value)=>{
+        console.log(value);
+    }).catch(()=>{
+        console.log(error);
+    }).finally(()=>{
+        console.log("proceed for next task"); 
+    })
+</script>
